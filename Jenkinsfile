@@ -3,8 +3,10 @@ pipeline{
     stages{
         stage("Greet User"){
             steps{
-                echo "Hello Brozjay
-                I believe you want to build an image, do that below"
+                sh '''
+                    echo "Hello Brozjay\n
+                    I believe you want to build an image, do that below"
+                '''
             }
         }
         stage("Build image"){
